@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="desktop:flex justify-center">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body
-    class="bg-[url(images/bg-mobile.svg)] bg-no-repeat bg-[#674BB1] px-10 font-OpenSans"
+    class="bg-[url(images/bg-mobile.svg)] desktop:bg-[url(images/bg-desktop.svg)] desktop:bg-cover bg-no-repeat bg-[#674BB1] px-10 font-OpenSans bg-cover desktop:flex desktop:flex-col desktop:max-w-[1300px]"
   >
-    <article>
-      <header class="py-10">
-        <img class="h-10" src="images/logo.svg" alt="" />
-      </header>
+    <header class="py-10 w-full">
+      <img class="h-10" src="images/logo.svg" alt="" />
+    </header>
+    <article
+      class="desktop:flex desktop:flex-row w-full gap-20 desktop:items-center flex flex-col justify-center"
+    >
+      <img class="" src="images/illustration-mockups.svg" alt="" />
 
-      <img class="w-full" src="images/illustration-mockups.svg" alt="" />
-
-      <main class="text-white flex flex-col items-center gap-7 mt-10">
-        <h1 class="text-2xl text-center font-bold">
+      <main
+        class="text-white flex flex-col items-center gap-7 desktop:items-start w-full"
+      >
+        <h1
+          class="text-2xl text-center font-bold desktop:text-4xl desktop:text-start"
+        >
           Build The Community Your Fans Will Love
         </h1>
-        <h2 class="font-[100] text-center">
+        <h2 class="font-[100] text-center desktop:text-start">
           Huddle re-images the way we build communities. you have a voice, but
           so does your audience. Create coonections with your users as you
           engage in genuine discussion.
@@ -32,26 +37,27 @@
           Register
         </button>
       </main>
-
-      <footer class="flex justify-center gap-3 my-10">
-        <a
-          class="rounded-[100%] border-[1px] border-white p-2 flex items-center justify-center"
-          href="https://www.facebook.com/"
-          ><img class="h-4" src="images/facebook.png" alt="facebook-icon" />
-        </a>
-
-        <a
-          class="rounded-[100%] border-[1px] border-white p-2 flex items-center justify-center"
-          href="https://www.x.com/"
-          ><img class="h-4" src="images/twitter.png" alt="twitter-icon" />
-        </a>
-
-        <a
-          class="rounded-[100%] border-[1px] border-white p-2 flex items-center justify-center"
-          href="https://www.instagram.com/"
-          ><img class="h-4" src="images/instagram.png" alt="instagram-icon" />
-        </a>
-      </footer>
     </article>
+    <footer
+      class="flex justify-center gap-3 my-10 desktop:mt-20 desktop:justify-end desktop:w-full"
+    >
+      <a
+        class="rounded-[100%] border-[1px] border-white p-2 flex items-center justify-center"
+        href="https://www.facebook.com/"
+        ><img class="h-4" src="images/facebook.png" alt="facebook-icon" />
+      </a>
+
+      <a
+        class="rounded-[100%] border-[1px] border-white p-2 flex items-center justify-center"
+        href="https://www.x.com/"
+        ><img class="h-4" src="images/twitter.png" alt="twitter-icon" />
+      </a>
+
+      <a
+        class="rounded-[100%] border-[1px] border-white p-2 flex items-center justify-center"
+        href="https://www.instagram.com/"
+        ><img class="h-4" src="images/instagram.png" alt="instagram-icon" />
+      </a>
+    </footer>
   </body>
 </html>
